@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Dentistry | V Cure Dental & Implant Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATIONAL HEADER WITH DYNAMIC DROPDOWN -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">V CURE <span>DENTAL</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <!-- SERVICES DROPDOWN -->
+                <li class="dropdown">
+                    <a href="services.html" class="drop-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="implants.html"><i class="fas fa-tooth"></i> Dental Implants</a></li>
+                        <li><a href="root-canal.html"><i class="fas fa-bolt"></i> Root Canal (RCT)</a></li>
+                        <li><a href="aligners.html"><i class="fas fa-gem"></i> Clear Aligners</a></li>
+                        <li><a href="smile-makeover.html"><i class="fas fa-star"></i> Smile Makeover</a></li>
+                        <li><a href="zirconia-crowns.html"><i class="fas fa-crown"></i> Zirconia Crowns</a></li>
+                        <li><a href="kids-dentistry.html"><i class="fas fa-child"></i> Kids Dentistry</a></li>
+                        <li><a href="wisdom-tooth.html"><i class="fas fa-briefcase-medical"></i> Wisdom Tooth
+                                Removal</a></li>
+                        <li><a href="cleaning.html"><i class="fas fa-sparkles"></i> Cleaning & Polishing</a></li>
+                        <li><a href="full-mouth.html"><i class="fas fa-sync-alt"></i> Full Mouth Rehab</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn-nav">Book Appointment</a></li>
+            </ul>
+
+            <!-- Mobile Toggle (Keep for responsiveness) -->
+            <button class="hamburger" onclick="toggleMobileMenu()" style="display:none;">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- IMMERSIVE HERO -->
+        <section class="hero-page"
+            style="padding: 120px 0; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&q=80&w=1920') center/cover;">
+            <div class="pattern-bg"></div>
+            <div class="container text-center reveal">
+                <span class="tagline" style="background:var(--secondary); color:white;">GENTLE CARE FOR LITTLE
+                    SMILES</span>
+                <h1 style="font-size: 4.5rem; color: white; margin-top: 20px;">Kids <span
+                        class="text-gradient">Dentistry</span></h1>
+                <p style="font-size: 1.3rem; color: #ddd; max-width: 800px; margin: 20px auto;">Building a lifetime of
+                    healthy dental habits in a fun, fear-free, and friendly environment.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 1: IMAGE LEFT / TEXT RIGHT -->
+        <section class="container section-padding">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 80px;">
+                <div class="reveal">
+                    <img src="Images/kids1.png" alt="Friendly Pediatric Dentist"
+                        style="width: 100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.15);height:500px;">
+                </div>
+                <div class="reveal">
+                    <span class="tagline">A POSITIVE EXPERIENCE</span>
+                    <h2 style="margin: 20px 0; font-size: 2.8rem;">kids Dentistry <br><span
+                            style="color:var(--primary)">Healthy Teeth</span></h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 30px;">
+                        Kids dentistry (also called paediatric dentistry) is the branch of dentistry that focuses on
+                        oral health of children from birth to teenage years.
+                    </p>
+                    <div class="glass-card" style="border-left: 5px solid var(--primary); padding: 25px;">
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 12px;"><i class="fas fa-heart" style="color:var(--primary)"></i>
+                                Growth & development of teeth</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-shield-alt"
+                                    style="color:var(--primary)"></i> Behaviour management</li>
+                            <li><i class="fas fa-smile-beam" style="color:var(--primary)"></i> Prevention of future
+                                dental problems</li>
+                            <li style="margin-top: 12px;"><i class="fas fa-tooth" style="color:var(--primary)"></i>
+                                Parent education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SPECIALIZED PEDIATRIC SERVICES (Detailed Grid) -->
+        <section class="section-padding" style="background: var(--bg-light, #f8f9fa); border-radius: 100px 0;">
+            <div class="container">
+
+                <div class="text-center reveal" style="margin-bottom: 50px;">
+                    <span class="tagline">OUR SPECIALIZED SERVICES</span>
+                    <h2>Services Provided</h2>
+                </div>
+
+                <div class="split-carousel-wrapper reveal">
+
+                    <!-- MAIN CAROUSEL BOX -->
+                    <div class="split-carousel-container">
+
+                        <!-- THE WORKING ARROWS (Now safely inside the container with high z-index) -->
+                        <button class="nav-arrow prev-arrow" id="slidePrev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next-arrow" id="slideNext"><i
+                                class="fas fa-chevron-right"></i></button>
+
+                        <!-- SLIDING TRACK -->
+                        <div class="split-carousel-track" id="splitServicesTrack">
+
+                            <!-- Slide 1 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+                                        alt="Single Tooth Implant">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-tooth"></i></div>
+                                    <h3 style="margin: 20px 0;">Dental Check-ups and Cleanings</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Regular
+                                        dental check-ups and cleanings help monitor the child’s oral health, identify
+                                        early signs of dental issues, and prevent tooth decay and gum disease. Proper
+                                        instruction for tooth brushing and ﬂossing should be considered for improved
+                                        oral hygiene.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1598256989800-fea5ce5146f2?auto=format&fit=crop&w=800&q=80"
+                                        alt="Multiple Tooth Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-grip-lines"></i></div>
+                                    <h3 style="margin: 20px 0;">Dental Fillings</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">When
+                                        children have cavities or tooth decay, dentists use dental fillings to restore
+                                        and stop from further damage. Even stainless-steel crowns are used after the
+                                        restoration to strengthen the affected teeth.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80"
+                                        alt="All-on-4 Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-smile-beam"></i></div>
+                                    <h3 style="margin: 20px 0;">Pulpectomy</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">When the
+                                        tooth is heavily decayed with the cavity touching the nerve, pulpectomy (root
+                                        canal treatment) is advised following which stainless steel / zirconia crown is
+                                        placed to restore the functionality and the aesthetics of the teeth. Milk tooth
+                                        acts as a good space maintainer for permanent tooth hence milk tooth should be
+                                        saved by pulpectomy.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1574482631557-0b162f444fbf?auto=format&fit=crop&w=800&q=80"
+                                        alt="Zygomatic Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-bone"></i></div>
+                                    <h3 style="margin: 20px 0;">Dental Sealants</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Dental
+                                        sealants are thin, protective coatings applied to the chewing surfaces which is
+                                        the pits and fissures of molars to prevent the development of cavities. It is
+                                        usually done in young milk teeth and permanent teeth when blackish discoloration
+                                        is observed or as a preventive therapy.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+                                        alt="Keyhole Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-crosshairs"></i></div>
+                                    <h3 style="margin: 20px 0;">Tooth Extractions</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">In cases of
+                                        severely decayed or damaged teeth that cannot be saved, dentists may perform
+                                        tooth extractions.
+
+                                        .</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80"
+                                        alt="Mini Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-compress-arrows-alt"></i></div>
+                                    <h3 style="margin: 20px 0;">Fluoride Treatments</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Topical
+                                        fluoride application helps strengthen tooth enamel, making it more resistant to
+                                        decay. It prevents the teeth from undergoing further demineralisation thereby
+                                        arresting the progression of caries. It is indicated when the white lesion on
+                                        the tooth surface is observed.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 7 -->
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+                                        alt="TAD Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-anchor"></i></div>
+                                    <h3 style="margin: 20px 0;">Space Maintainers</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">: Children
+                                        may need space maintainers if they lose a tooth early or have a baby (primary)
+                                        tooth extracted due to dental decay. A space maintainer is an appliance keep the
+                                        space open to allow the permanent tooth to erupt and come into place without any
+                                        malalignment in permanent Dentition.</p>
+                                </div>
+                            </div>
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+                                        alt="TAD Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-anchor"></i></div>
+                                    <h3 style="margin: 20px 0;">Orthodontic Evaluations</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">Dentists
+                                        assess the alignment and growth of a child’s teeth and jaws to determine if
+                                        orthodontic treatment is needed. Identifying early signs of orthodontic needs
+                                        and providing timely intervention for the best long-term results..</p>
+                                </div>
+                            </div>
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+                                        alt="TAD Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-anchor"></i></div>
+                                    <h3 style="margin: 20px 0;">Dental Trauma Managemen</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">If a child
+                                        experiences dental injuries or dental trauma, dentists can provide appropriate
+                                        treatment and care.</p>
+                                </div>
+                            </div>
+                            <div class="split-slide">
+                                <div class="slide-image">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+                                        alt="TAD Implants">
+                                </div>
+                                <div class="slide-content">
+                                    <div class="mini-icon-circle"><i class="fas fa-anchor"></i></div>
+                                    <h3 style="margin: 20px 0;"> Dental X-rays</h3>
+                                    <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.6;">X-rays are
+                                        taken to evaluate the child’s dental and jaw development and detect any hidden
+                                        dental issues.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Injecting the Indicators here -->
+                    <div class="carousel-indicators" id="carouselIndicators"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TEXT LEFT / IMAGE RIGHT -->
+        <section class="container section-padding">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 80px;">
+                <div class="reveal">
+                    <span class="tagline">PREVENTIVE EXCELLENCE</span>
+                    <h2 style="margin: 20px 0; font-size: 2.8rem;">Why choose<br><span style="color:var(--secondary)">V
+                            Cure Dental</span></h2>
+                    <div class="glass-card" style="border-left: 5px solid var(--primary); padding: 25px;">
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check-circle"
+                                    style="color:var(--primary)"></i> V Cure Dental ensures kids get comfortable and
+                                painless dental treatment.</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check-circle"
+                                    style="color:var(--primary)"></i> We rigorously adhere to dental guidelines in terms
+                                of tools and treatment processes.</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check-circle"
+                                    style="color:var(--primary)"></i> We want you to have the most comfortable
+                                experience possible, whether before, during and after a dental treatment.</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check-circle"
+                                    style="color:var(--primary)"></i> We take good care and adhere to global standards
+                                for patient care.</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="reveal">
+                    <img src="Images/kids2.png" alt="Happy Child Patient"
+                        style="width: 100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="container section-padding reveal">
+            <div class="glass-card"
+                style="background: var(--gradient); color: white; padding: 80px; text-align: center; border-radius: 40px;">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">Your Child's First Smile Visit</h2>
+                <p style="margin-bottom: 40px; opacity: 0.9;">Make their first dental experience a happy memory. Book a
+                    friendly consultation today.</p>
+                <div class="flex" style="justify-content: center;">
+                    <a href="book-appointment.html" class="btn-main"
+                        style="background: white; color: var(--primary);">Schedule First Visit</a>
+                    <a href="https://wa.me/yournumber" class="flex"
+                        style="color: white; font-weight: 700; text-decoration: none; margin-left: 20px;"><i
+                            class="fab fa-whatsapp"></i> Chat with Dentist</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">V-Cure
+                        <span>Dental specialist</span></a>
+                    <p>Pioneering the future of healthcare with 25 years of excellence. We provide world-class medical
+                        services with a commitment to compassion, innovation, and patient-centered care.</p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="implants.html">Dental Implants</a></li>
+                        <li><a href="root-canal.html">Root Canal</a></li>
+                        <li><a href="aligners.html">Clear Aligners</a></li>
+                        <li><a href="smile-makeover.html">Smile Makeover</a></li>
+                        <li><a href="zirconia-crowns.html">Zirconia Crowns</a></li>
+                        <li><a href="kids-dentistry.html">Kids Dentistry</a></li>
+                        <li><a href="wisdom-tooth.html">Wisdom Tooth Removal</a></li>
+                        <li><a href="cleaning.html">Cleaning and Polishing</a></li>
+                        <li><a href="full-mouth.html">Full Mouth Rehabilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Krishnagiri Branch – Rayappa Street
+                                Iyyappanthangal Branch – Chennai<br></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Emergency: +91 123 456 7890<br>Admin: +91 000 111 2222</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@V-Cure Dental specialist.com<br>appointments@V-Cure Dental specialist.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 V-Cure. All rights reserved.</p>
+                <div class="flex">
+                    <a href="#" style="color: #718096; text-decoration: none;">Privacy Policy</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Terms of Service</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Developed by AspirenTech Business
+                        Solutions
+                        <a href="https://aspirentech.com/" target="_blank">
+                            <img src="images/abs-logo.png" alt="AspirenTech Business Solutions"
+                                style="width: 40px; height: 40px;">
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/yournumber" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.getElementById("splitServicesTrack");
+            const slides = Array.from(track.querySelectorAll('.split-slide'));
+            const indicatorsContainer = document.getElementById("carouselIndicators");
+
+            const btnPrev = document.getElementById("slidePrev");
+            const btnNext = document.getElementById("slideNext");
+
+            let currentIndex = 0;
+            let autoPlayInterval;
+            const speed = 3000; // 3 seconds
+
+            // 1. Generate the Dots dynamically
+            slides.forEach((slide, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('carousel-dot');
+                if (index === 0) dot.classList.add('active');
+
+                // Allow user to click a dot to jump to that slide
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                    resetAutoPlay();
+                });
+
+                indicatorsContainer.appendChild(dot);
+            });
+
+            const dots = Array.from(indicatorsContainer.querySelectorAll('.carousel-dot'));
+
+            // 2. MATHEMATICAL SCROLL FUNCTION (100% RELIABLE)
+            function goToSlide(index) {
+                // Loop functionality
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+
+                currentIndex = index;
+
+                // Calculates exact width of 1 slide block, multiples by target index
+                const exactScrollPosition = track.clientWidth * currentIndex;
+
+                track.scrollTo({ left: exactScrollPosition, behavior: 'smooth' });
+                updateDots(currentIndex);
+            }
+
+            // 3. Update active dot UI
+            function updateDots(activeIndex) {
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[activeIndex]) {
+                    dots[activeIndex].classList.add('active');
+                }
+            }
+
+            // 4. Arrow Button Clicks (Fixed)
+            if (btnNext && btnPrev) {
+                btnNext.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevents page from jumping
+                    goToSlide(currentIndex + 1);
+                    resetAutoPlay();
+                });
+
+                btnPrev.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevents page from jumping
+                    goToSlide(currentIndex - 1);
+                    resetAutoPlay();
+                });
+            }
+
+            // 5. Autoplay Controls
+            function startAutoPlay() {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = setInterval(() => {
+                    goToSlide(currentIndex + 1);
+                }, speed);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            function resetAutoPlay() {
+                stopAutoPlay();
+                startAutoPlay();
+            }
+
+            // 6. Intelligent Scroll Syncing (If user swipes on mobile)
+            const observerOptions = {
+                root: track,
+                threshold: 0.6 // Slide must be 60% visible to trigger
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const visibleIndex = slides.indexOf(entry.target);
+                        currentIndex = visibleIndex;
+                        updateDots(visibleIndex);
+                    }
+                });
+            }, observerOptions);
+
+            slides.forEach(slide => observer.observe(slide));
+
+            // 7. Initialize Auto Play
+            startAutoPlay();
+
+            // 8. Pause Events
+            track.addEventListener('mouseenter', stopAutoPlay);
+            track.addEventListener('mouseleave', startAutoPlay);
+            track.addEventListener('touchstart', stopAutoPlay, { passive: true });
+            track.addEventListener('touchend', resetAutoPlay, { passive: true });
+
+            // Also pause if user hovers over the arrows
+            btnNext.addEventListener('mouseenter', stopAutoPlay);
+            btnPrev.addEventListener('mouseenter', stopAutoPlay);
+        });
+    </script>
+</body>
+
+</html>
